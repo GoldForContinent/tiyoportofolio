@@ -686,7 +686,15 @@
         // Form submission handler
         document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Thank you for your message! I will get back to you soon.');
+
+            const name = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const subject = this.querySelector('input[type="text"][placeholder="YOUR SUBJECT"]').value;
+            const message = this.querySelector('textarea').value;
+
+            const mailtoLink = `mailto:tiyoamos2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>')}`;
+
+            window.location.href = mailtoLink;
             this.reset();
         });
 
