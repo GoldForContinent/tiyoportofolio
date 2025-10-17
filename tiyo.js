@@ -661,11 +661,15 @@
         window.onclick = function(event) {
             const eventModal = document.getElementById('eventModal');
             const projectModal = document.getElementById('projectModal');
+            const successModal = document.getElementById('successModal');
             if (event.target === eventModal) {
                 closeModal();
             }
             if (event.target === projectModal) {
                 closeProjectModal();
+            }
+            if (event.target === successModal) {
+                closeSuccessModal();
             }
         }
 
@@ -706,7 +710,7 @@
                 });
 
                 if (response.ok) {
-                    openSuccessModal(); // We will create this function
+                    openSuccessModal();
                     this.reset();
                 } else {
                     throw new Error('Form submission failed');
@@ -753,3 +757,23 @@
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
         });
+
+        // Open success modal
+        function openSuccessModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'block';
+            const icon = modal.querySelector('.success-icon-container');
+            icon.style.opacity = '0';
+            icon.style.transform = 'scale(0.8)';
+            setTimeout(() => {
+                icon.style.opacity = '1';
+                icon.style.transform = 'scale(1)';
+            }, 100);
+            setTimeout(closeSuccessModal, 4000);
+        }
+
+        // Close success modal
+        function closeSuccessModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'none';
+        }
