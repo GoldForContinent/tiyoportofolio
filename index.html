@@ -487,11 +487,12 @@
                     Ready to add value from day one? I'm actively seeking internship and full-time opportunities where I can apply my analytical skills, passion for finance, and continuous learning mindset. Let's connect!
                 </p>
 
-                <form class="contact-form">
-                    <input type="text" id="name" placeholder="YOUR NAME HERE" required>
-                    <input type="email" id="email" placeholder="YOUR EMAIL HERE" required>
-                    <input type="text" id="subject" placeholder="YOUR SUBJECT" required>
-                    <textarea id="message" placeholder="YOUR MESSAGE" required></textarea>
+                <form id="contactForm" class="contact-form" action="https://formsubmit.co/tiyoamos163@gmail.com" method="POST">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="name" id="name" placeholder="YOUR NAME HERE" required>
+                    <input type="email" name="email" id="email" placeholder="YOUR EMAIL HERE" required>
+                    <input type="text" name="subject" id="subject" placeholder="YOUR SUBJECT" required>
+                    <textarea name="message" id="message" placeholder="YOUR MESSAGE" required></textarea>
                     <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> SUBMIT</button>
                 </form>
             </div>
@@ -500,20 +501,38 @@
 
     <!-- Floating Navigation -->
     <div class="floating-nav">
-        <div class="float-nav-btn" onclick="scrollToSection('home')" title="Home">
+        <div class="float-nav-btn" onclick="scrollToSection('home')">
             <i class="fas fa-home"></i>
         </div>
-        <div class="float-nav-btn" onclick="scrollToSection('about')" title="About">
+        <div class="float-nav-btn" onclick="scrollToSection('about')">
             <i class="fas fa-user"></i>
         </div>
-        <div class="float-nav-btn" onclick="scrollToSection('projects')" title="Projects">
+        <div class="float-nav-btn" onclick="scrollToSection('projects')">
             <i class="fas fa-briefcase"></i>
         </div>
-        <div class="float-nav-btn" onclick="scrollToSection('seminars')" title="Events">
+        <div class="float-nav-btn" onclick="scrollToSection('seminars')">
             <i class="fas fa-calendar"></i>
         </div>
-        <div class="float-nav-btn" onclick="scrollToSection('contact')" title="Contact">
+        <div class="float-nav-btn" onclick="scrollToSection('contact')">
             <i class="fas fa-envelope"></i>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Success!</h2>
+                <span class="close-modal" onclick="closeSuccessModal()">&times;</span>
+            </div>
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h3>Message Sent!</h3>
+                <p>Thank you for reaching out. I will get back to you shortly.</p>
+                <button class="btn-primary" onclick="closeSuccessModal()">Close</button>
+            </div>
         </div>
     </div>
 

@@ -684,18 +684,40 @@
         });
 
         // Form submission handler
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+        const contactForm = document.getElementById('contactForm');
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
 
-            const name = this.querySelector('input[type="text"]').value;
-            const email = this.querySelector('input[type="email"]').value;
-            const subject = this.querySelector('input[type="text"][placeholder="YOUR SUBJECT"]').value;
-            const message = this.querySelector('textarea').value;
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalBtnHTML = submitBtn.innerHTML;
 
-            const mailtoLink = `mailto:tiyoamos2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>')}`;
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> SENDING...';
+            submitBtn.disabled = true;
 
-            window.location.href = mailtoLink;
-            this.reset();
+            const formData = new FormData(this);
+
+            try {
+                const response = await fetch(this.action, {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    openSuccessModal(); // We will create this function
+                    this.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                console.error('Error submitting form:', error);
+                alert('An error occurred. Please try again later.');
+            } finally {
+                submitBtn.innerHTML = originalBtnHTML;
+                submitBtn.disabled = false;
+            }
         });
 
         // Add scroll effect to navigation
