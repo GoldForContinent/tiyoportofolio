@@ -75,6 +75,8 @@
             });
         }, { threshold: 0.3 });
 
+        contactObserver.observe(contactSection);
+
         // Event gallery data
         const eventGalleries = [
             {
@@ -586,7 +588,7 @@
         }
 
         function startTestimonialRotation() {
-            testimonialInterval = setInterval(nextTestimonial, 7000);
+            testimonialInterval = setInterval(nextTestimonial, 5000);
         }
 
         // Observe testimonials section
@@ -609,9 +611,8 @@
             section.scrollIntoView({ behavior: 'smooth', block: 'start' });
             
             // Update active state
-            const floatNavBtn = document.querySelector(`.float-nav-btn[onclick="scrollToSection('${sectionId}')"]`);
             document.querySelectorAll('.float-nav-btn').forEach(btn => btn.classList.remove('active'));
-            if(floatNavBtn) floatNavBtn.classList.add('active');
+            event.currentTarget.classList.add('active');
         }
 
         // Floating navigation - show only near end of page
@@ -623,6 +624,7 @@
             
             const floatingNav = document.querySelector('.floating-nav');
             
+            // Show when user has scrolled 70% of the page
             if (scrollPercentage > 0.7) {
                 floatingNav.classList.add('visible');
             } else {
@@ -647,18 +649,15 @@
                 }
             });
             
-            floatBtns.forEach((btn) => {
+            floatBtns.forEach((btn, index) => {
                 btn.classList.remove('active');
-                if (btn.getAttribute('onclick') === `scrollToSection('${current}')`) {
+                if (sections[index] === current) {
                     btn.classList.add('active');
                 }
             });
         });
 
         // Close modals when clicking outside
-        const successModal = document.getElementById('successModal');
-        const contactForm = document.querySelector('.contact-form');
-
         window.onclick = function(event) {
             const eventModal = document.getElementById('eventModal');
             const projectModal = document.getElementById('projectModal');
@@ -667,10 +666,6 @@
             }
             if (event.target === projectModal) {
                 closeProjectModal();
-            }
-            if (event.target == successModal) {
-                hideSuccessModal();
-                contactForm.reset();
             }
         }
 
@@ -688,34 +683,19 @@
             });
         });
 
-        // Success Modal Logic
-        const closeSuccessModal = document.getElementById('closeSuccessModal');
-
-        function showSuccessModal() {
-            successModal.style.display = 'flex';
-        }
-
-        function hideSuccessModal() {
-            successModal.style.display = 'none';
-        }
-
-        contactForm.addEventListener('submit', function(e) {
+        // Form submission handler
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
             e.preventDefault();
-            showSuccessModal();
-        });
 
-        closeSuccessModal.addEventListener('click', function() {
-            hideSuccessModal();
-
-            const name = contactForm.querySelector('#name').value;
-            const email = contactForm.querySelector('#email').value;
-            const subject = contactForm.querySelector('#subject').value;
-            const message = contactForm.querySelector('#message').value;
+            const name = this.querySelector('input[type="text"]').value;
+            const email = this.querySelector('input[type="email"]').value;
+            const subject = this.querySelector('input[type="text"][placeholder="YOUR SUBJECT"]').value;
+            const message = this.querySelector('textarea').value;
 
             const mailtoLink = `mailto:tiyoamos2@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(message + '\n\nFrom: ' + name + ' <' + email + '>')}`;
 
             window.location.href = mailtoLink;
-            contactForm.reset();
+            this.reset();
         });
 
         // Add scroll effect to navigation
