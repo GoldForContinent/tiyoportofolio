@@ -763,14 +763,15 @@ function closeSuccessModal() {
         function openSuccessModal() {
             const modal = document.getElementById('successModal');
             modal.style.display = 'block';
-            const icon = modal.querySelector('.success-icon-container');
-            icon.style.opacity = '0';
-            icon.style.transform = 'scale(0.8)';
-            setTimeout(() => {
-                icon.style.opacity = '1';
-                icon.style.transform = 'scale(1)';
-            }, 100);
-            setTimeout(closeSuccessModal, 4000);
+            const icon = modal.querySelector('.success-icon');
+            if (icon) {
+                icon.style.opacity = '0';
+                icon.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    icon.style.opacity = '1';
+                    icon.style.transform = 'scale(1)';
+                }, 100);
+            }
         }
 
         // Close success modal
