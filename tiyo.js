@@ -34,18 +34,24 @@
 
         // Word drop animation for About section
         function animateWords() {
-            const aboutText = document.getElementById('aboutText');
-            const text = aboutText.textContent;
-            const words = text.split(' ');
+            const aboutTexts = document.querySelectorAll('.about-text');
+            let wordIndex = 0;
             
-            aboutText.innerHTML = '';
-            
-            words.forEach((word, index) => {
-                const span = document.createElement('span');
-                span.className = 'word';
-                span.textContent = word + ' ';
-                span.style.animationDelay = `${index * 0.05}s`;
-                aboutText.appendChild(span);
+            aboutTexts.forEach((aboutText) => {
+                const text = aboutText.textContent;
+                const words = text.split(' ');
+                
+                aboutText.innerHTML = '';
+                
+                words.forEach((word, index) => {
+                    const span = document.createElement('span');
+                    span.className = 'word';
+                    span.textContent = word + ' ';
+                    span.style.animationDelay = `${(wordIndex + index) * 0.05}s`;
+                    aboutText.appendChild(span);
+                });
+                
+                wordIndex += words.length;
             });
         }
 
@@ -56,11 +62,14 @@
                 if (entry.isIntersecting) {
                     animateWords();
                     // Trigger lanyard animation
-                    document.getElementById('lanyardCard').classList.add('animated');
+                    const lanyardCard = document.getElementById('lanyardCard');
+                    if (lanyardCard) {
+                        lanyardCard.classList.add('animated');
+                    }
                     aboutObserver.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.3 });
+        }, { threshold: 0.1 });
 
         aboutObserver.observe(aboutSection);
 

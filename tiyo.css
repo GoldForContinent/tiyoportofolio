@@ -1478,10 +1478,19 @@
             .lanyard-card {
                 flex: 1;
                 width: 100%;
+                opacity: 1;
+            }
+
+            .lanyard-card.animated {
+                animation: dropDown 1.5s ease-out forwards;
             }
 
             .lanyard-string {
                 height: 100px;
+            }
+
+            .about-text .word {
+                animation: wordDrop 0.6s ease-out forwards;
             }
 
             .id-card {
