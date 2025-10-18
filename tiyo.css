@@ -1398,6 +1398,11 @@
                 text-align: center;
                 padding: 7rem 5% 4rem;
                 min-height: auto;
+                background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.7) 100%), url('tiyo 2.png');
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                position: relative;
             }
 
             .hero-content h1 {
