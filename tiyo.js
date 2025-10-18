@@ -368,15 +368,16 @@
             modal.style.display = 'block';
         }
 
-        function closeProjectModal() {
-            document.getElementById('projectModal').style.display = 'none';
-        }
+     // Close success modal
+function closeSuccessModal() {
+    document.getElementById('successModal').style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
 
         function createProjectSlideshow() {
             const container = document.getElementById('projectSlideshow');
             const navContainer = document.getElementById('projectNav');
             
-            // Remove existing slides but keep arrows
             const existingSlides = container.querySelectorAll('.modal-slide');
             existingSlides.forEach(slide => slide.remove());
             
@@ -777,3 +778,6 @@
             const modal = document.getElementById('successModal');
             modal.style.display = 'none';
         }
+
+        // Form submission - allow FormSubmit to handle it naturally
+        // No preventDefault needed, form will submit directly to FormSubmit
