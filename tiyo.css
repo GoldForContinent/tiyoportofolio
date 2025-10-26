@@ -1621,14 +1621,17 @@
                 width: 40px;
                 height: 40px;
                 font-size: 1.2rem;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
             }
 
             .modal-arrow.prev {
-                left: -10px;
+                left: 10px;
             }
 
             .modal-arrow.next {
-                right: -10px;
+                right: 10px;
             }
 
             .modal-slide h3 {
@@ -1794,10 +1797,29 @@
             .modal-content {
                 width: 98%;
                 padding: 1rem;
+                margin: 10% auto;
             }
 
             .modal-header h2 {
                 font-size: 1.2rem;
+            }
+
+            .modal-arrow {
+                width: 35px;
+                height: 35px;
+                font-size: 1rem;
+            }
+
+            .modal-arrow.prev {
+                left: 5px;
+            }
+
+            .modal-arrow.next {
+                right: 5px;
+            }
+
+            .close-modal {
+                font-size: 1.8rem;
             }
 
             .floating-nav {

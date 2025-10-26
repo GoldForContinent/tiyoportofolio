@@ -213,152 +213,196 @@
         // Project Modal Data
         const projectsData = [
             {
-                title: 'Quantitative Strategy: Pairs Trading on S&P 500',
+                title: 'Career.edYOU Academy - JP Morgan Chase',
                 slides: [
                     {
                         type: 'details',
                         title: 'Project Overview',
                         content: `
-                            <p><strong>Objective:</strong> Develop and backtest a pairs trading strategy to exploit mean-reversion opportunities in cointegrated stock pairs within the S&P 500.</p>
-                            <p><strong>Duration:</strong> 3 months (Fall 2023)</p>
-                            <p><strong>Team Size:</strong> Individual Project</p>
+                            <p><strong>Objective:</strong> Complete an intensive virtual training program designed to prepare participants for careers at JP Morgan Chase, focusing on interview preparation, understanding firm culture, and building foundational business skills.</p>
+                            <p><strong>Duration:</strong> 6 weeks (Sept 2025-Present)</p>
+                            <p><strong>Team Size:</strong> Individual participant in cohort-based program</p>
                             <h4 style="color: #ff6b00; margin-top: 2rem;">Methodology:</h4>
                             <ul>
-                                <li>Conducted cointegration analysis using Johansen test on 100+ stock pairs</li>
-                                <li>Implemented z-score based entry/exit signals with dynamic threshold adjustment</li>
-                                <li>Built comprehensive backtesting framework with transaction cost modeling</li>
-                                <li>Applied risk management through position sizing and stop-loss mechanisms</li>
+                                <li>Participated in structured virtual sessions covering interview preparation techniques</li>
+                                <li>Engaged with recruiting team members to understand hiring processes and expectations</li>
+                                <li>Studied JP Morgan Chase's culture, values, and lines of business</li>
+                                <li>Developed foundational skills relevant to investment banking and financial services</li>
+                                <li>Completed practical exercises simulating real-world banking scenarios</li>
                             </ul>
                         `
                     },
                     {
                         type: 'details',
-                        title: 'Technical Implementation',
+                        title: 'Skills Developed',
                         content: `
-                            <p><strong>Technologies Used:</strong></p>
+                            <p><strong>Professional Development Areas:</strong></p>
                             <ul>
-                                <li>Python (NumPy, Pandas, Statsmodels) for data analysis</li>
-                                <li>yfinance API for historical market data</li>
-                                <li>Matplotlib and Seaborn for visualization</li>
-                                <li>Jupyter Notebooks for documentation</li>
+                                <li>Interview preparation and professional communication</li>
+                                <li>Financial services industry knowledge</li>
+                                <li>Business analysis and critical thinking</li>
+                                <li>Professional networking and relationship building</li>
                             </ul>
                             <h4 style="color: #ff6b00; margin-top: 2rem;">Key Features:</h4>
                             <ul>
-                                <li>Automated pair selection based on correlation and cointegration</li>
-                                <li>Dynamic hedge ratio calculation using rolling regression</li>
-                                <li>Real-time signal generation system</li>
-                                <li>Portfolio-level risk metrics tracking</li>
+                                <li>Structured learning modules covering firm operations</li>
+                                <li>Direct interaction with JP Morgan Chase recruiting team</li>
+                                <li>Real-world case study analysis</li>
+                                <li>Professional skill development workshops</li>
+                                <li>Industry insights and career pathway guidance</li>
                             </ul>
                         `
                     },
                     {
-                        type: 'media',
-                        title: 'Results & Performance'
-                    },
-                    {
-                        type: 'media',
-                        title: 'Code Repository'
+                        type: 'details',
+                        title: 'Key Outcomes',
+                        content: `
+                            <h4 style="color: #ff6b00; margin-bottom: 1.5rem;">Professional Development:</h4>
+                            <ul>
+                                <li>Enhanced understanding of investment banking operations</li>
+                                <li>Improved interview and communication skills</li>
+                                <li>Built foundational knowledge of financial services</li>
+                                <li>Developed professional network within the industry</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem; margin-bottom: 1.5rem;">Career Impact:</h4>
+                            <ul>
+                                <li>Prepared for competitive recruitment processes</li>
+                                <li>Gained insights into firm culture and expectations</li>
+                                <li>Established connections with industry professionals</li>
+                            </ul>
+                        `
                     }
                 ]
             },
             {
-                title: 'LBO Model for Tech Acquisition',
+                title: 'Nova Scotia Green Energy Project',
                 slides: [
                     {
                         type: 'details',
                         title: 'Project Overview',
                         content: `
-                            <p><strong>Objective:</strong> Build a comprehensive leveraged buyout model to evaluate acquisition feasibility for a hypothetical $500M SaaS company.</p>
-                            <p><strong>Duration:</strong> 2 months (Spring 2024)</p>
-                            <p><strong>Context:</strong> Advanced Corporate Finance Course Project</p>
-                            <h4 style="color: #ff6b00; margin-top: 2rem;">Model Components:</h4>
+                            <p><strong>Objective:</strong> Research, analyze, and write a comprehensive proposal to the World Bank for funding a green energy plan in Nova Scotia, with full implementation targeted by 2050.</p>
+                            <p><strong>Duration:</strong> Intro to Engineering course project (Jan-May 2025)</p>
+                            <p><strong>Location:</strong> Medford, MA</p>
+                            <p><strong>Team Size:</strong> Individual project</p>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Methodology:</h4>
                             <ul>
-                                <li>Historical financial statement analysis (3 years)</li>
-                                <li>5-year revenue and EBITDA projections with multiple scenarios</li>
-                                <li>Detailed debt schedule with multiple tranches</li>
-                                <li>Complete sources and uses of funds</li>
-                                <li>Exit analysis with sensitivity tables</li>
+                                <li>Conducted extensive research on Nova Scotia's current energy infrastructure</li>
+                                <li>Analyzed financial data covering 20-year implementation timeline</li>
+                                <li>Assessed feasibility of green energy transition strategies</li>
+                                <li>Developed comprehensive budget and funding requirements</li>
+                                <li>Created detailed implementation roadmap and milestones</li>
+                                <li>Evaluated environmental and economic impact projections</li>
                             </ul>
                         `
                     },
                     {
                         type: 'details',
-                        title: 'Financial Assumptions & Analysis',
+                        title: 'Research & Analysis',
                         content: `
-                            <p><strong>Key Assumptions:</strong></p>
+                            <p><strong>Research & Analysis Tools:</strong></p>
                             <ul>
-                                <li>Revenue CAGR: 15% (Base Case), 12-18% (Scenarios)</li>
-                                <li>EBITDA Margin Expansion: 25% to 30% over 5 years</li>
-                                <li>Debt Structure: 60% leverage with 4.5x Senior Debt, 2x Subordinated</li>
-                                <li>Exit Multiple: 12x EBITDA (comparable transactions analysis)</li>
+                                <li>Financial modeling and forecasting software</li>
+                                <li>Energy sector data analysis</li>
+                                <li>Economic impact assessment frameworks</li>
+                                <li>Policy research and regulatory analysis</li>
                             </ul>
-                            <h4 style="color: #ff6b00; margin-top: 2rem;">Valuation Results:</h4>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Key Components:</h4>
                             <ul>
-                                <li>Base Case IRR: 25.3%</li>
-                                <li>Upside Case IRR: 32.1%</li>
-                                <li>Downside Case IRR: 18.7%</li>
-                                <li>Money-on-Money Multiple: 3.2x (Base Case)</li>
+                                <li>55-page comprehensive proposal document</li>
+                                <li>20-year financial projection models</li>
+                                <li>Feasibility study and risk assessment</li>
+                                <li>Sustainability impact analysis</li>
+                                <li>Implementation timeline and milestones</li>
+                                <li>Budget breakdown and funding allocation strategy</li>
                             </ul>
                         `
                     },
                     {
-                        type: 'media',
-                        title: 'Model Screenshots'
-                    },
-                    {
-                        type: 'media',
-                        title: 'Presentation Deck'
+                        type: 'details',
+                        title: 'Key Outcomes',
+                        content: `
+                            <h4 style="color: #ff6b00; margin-bottom: 1.5rem;">Deliverables:</h4>
+                            <ul>
+                                <li>Comprehensive 55-page World Bank proposal</li>
+                                <li>Detailed financial analysis spanning 20 years</li>
+                                <li>Feasibility assessment with risk mitigation strategies</li>
+                                <li>Sustainability roadmap for Nova Scotia's energy transition</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem; margin-bottom: 1.5rem;">Impact:</h4>
+                            <ul>
+                                <li>Demonstrated viability of large-scale green energy transition</li>
+                                <li>Provided data-driven strategy for sustainable development</li>
+                                <li>Created framework for long-term environmental and economic benefits</li>
+                            </ul>
+                        `
                     }
                 ]
             },
             {
-                title: 'Portfolio Risk Analytics Dashboard',
+                title: 'Just Markets - Independent Forex Trader',
                 slides: [
                     {
                         type: 'details',
                         title: 'Project Overview',
                         content: `
-                            <p><strong>Objective:</strong> Develop an interactive risk analytics platform for real-time portfolio monitoring and stress testing.</p>
-                            <p><strong>Duration:</strong> 2.5 months (Winter 2024)</p>
-                            <p><strong>Stakeholder:</strong> Tufts University Investment Club</p>
-                            <h4 style="color: #ff6b00; margin-top: 2rem;">Dashboard Features:</h4>
+                            <p><strong>Objective:</strong> Conduct professional-level forex trading operations with emphasis on technical analysis, risk management, and disciplined execution across major currency pairs and commodities.</p>
+                            <p><strong>Duration:</strong> May 2019-Dec 2023</p>
+                            <p><strong>Location:</strong> Nairobi, Kenya</p>
+                            <p><strong>Team Size:</strong> Independent Trader</p>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Methodology:</h4>
                             <ul>
-                                <li>Real-time portfolio composition and performance tracking</li>
-                                <li>Value-at-Risk (VaR) calculation using multiple methodologies</li>
-                                <li>Monte Carlo simulation for tail risk analysis</li>
-                                <li>Correlation matrices and factor exposure analysis</li>
-                                <li>Historical stress testing against market crises</li>
+                                <li>Performed in-depth technical analysis using multiple indicators and chart patterns</li>
+                                <li>Conducted fundamental analysis of macroeconomic factors affecting currency movements</li>
+                                <li>Developed and tested trading strategies across various market conditions</li>
+                                <li>Implemented strict risk management protocols including position sizing</li>
+                                <li>Executed trades with disciplined entry and exit strategies</li>
+                                <li>Maintained detailed trading journal and performance analytics</li>
+                                <li>Applied stop-loss mechanisms to protect capital</li>
                             </ul>
                         `
                     },
                     {
                         type: 'details',
-                        title: 'Technical Stack & Methodology',
+                        title: 'Trading Technologies & Strategies',
                         content: `
-                            <p><strong>Technologies:</strong></p>
+                            <p><strong>Trading Technologies:</strong></p>
                             <ul>
-                                <li>Python backend with pandas and NumPy for calculations</li>
-                                <li>Tableau for interactive visualization</li>
-                                <li>Bloomberg API for live market data</li>
-                                <li>PostgreSQL for historical data storage</li>
+                                <li>Advanced charting platforms and technical indicators</li>
+                                <li>Real-time market data feeds</li>
+                                <li>Trade execution platforms</li>
+                                <li>Portfolio analysis tools</li>
+                                <li>Python for data analysis and strategy backtesting</li>
                             </ul>
-                            <h4 style="color: #ff6b00; margin-top: 2rem;">Risk Metrics Implemented:</h4>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Currency Pairs Traded:</h4>
                             <ul>
-                                <li>95% and 99% VaR (Historical, Parametric, Monte Carlo)</li>
-                                <li>Expected Shortfall (CVaR)</li>
-                                <li>Maximum Drawdown Analysis</li>
-                                <li>Sharpe Ratio, Sortino Ratio, Information Ratio</li>
-                                <li>Beta and Factor Exposures</li>
+                                <li>EUR/USD (Euro/US Dollar)</li>
+                                <li>XAU/USD (Gold/US Dollar)</li>
+                                <li>Other major and emerging market pairs</li>
                             </ul>
                         `
                     },
                     {
-                        type: 'media',
-                        title: 'Dashboard Demo'
-                    },
-                    {
-                        type: 'media',
-                        title: 'Documentation'
+                        type: 'details',
+                        title: 'Risk Management & Outcomes',
+                        content: `
+                            <h4 style="color: #ff6b00; margin-bottom: 1.5rem;">Risk Management Framework:</h4>
+                            <ul>
+                                <li>Position sizing based on account equity</li>
+                                <li>Stop-loss placement at strategic levels</li>
+                                <li>Risk per trade limitations</li>
+                                <li>Portfolio diversification across pairs</li>
+                                <li>Drawdown management protocols</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem; margin-bottom: 1.5rem;">Skills Developed:</h4>
+                            <ul>
+                                <li>Patience and emotional discipline in high-pressure situations</li>
+                                <li>Composure during volatile market conditions</li>
+                                <li>Precision in trade execution and timing</li>
+                                <li>Advanced technical analysis capabilities</li>
+                                <li>Comprehensive risk management expertise</li>
+                            </ul>
+                        `
                     }
                 ]
             }
@@ -375,6 +419,11 @@
             document.getElementById('projectModalTitle').textContent = currentProjectData.title;
             createProjectSlideshow();
             modal.style.display = 'block';
+        }
+
+        function closeProjectModal() {
+            const modal = document.getElementById('projectModal');
+            modal.style.display = 'none';
         }
 
      // Close success modal
