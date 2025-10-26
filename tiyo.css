@@ -702,6 +702,14 @@
             justify-content: center;
             margin-bottom: 1.5rem;
             font-size: 2rem;
+            overflow: hidden;
+        }
+
+        .seminar-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            padding: 8px;
         }
 
         .seminar-card h3 {
