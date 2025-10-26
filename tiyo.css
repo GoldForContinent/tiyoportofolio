@@ -1462,10 +1462,15 @@
 
             .hero-image {
                 margin-top: 2rem;
+                max-height: 350px;
+                overflow: hidden;
             }
 
             .hero-image img {
                 max-width: 300px;
+                height: auto;
+                object-fit: contain;
+                object-position: center top;
             }
 
             .about {
@@ -1753,6 +1758,19 @@
         }
 
         @media (max-width: 480px) {
+            .hero-image {
+                margin-top: 1.5rem;
+                max-height: 300px;
+                overflow: hidden;
+            }
+
+            .hero-image img {
+                max-width: 250px;
+                height: auto;
+                object-fit: contain;
+                object-position: center top;
+            }
+
             .hero-content h1 {
                 font-size: 1.8rem;
             }
