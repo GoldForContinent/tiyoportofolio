@@ -89,14 +89,12 @@
         // Event gallery data
         const eventGalleries = [
             {
-                title: 'M&A Trends 2024 - J.P. Morgan',
+                title: 'Tisch Scholars Program - Dana-Farber Cancer Institute',
                 images: [
-                    'Panel Discussion - Main Stage',
-                    'Networking Reception',
-                    'Q&A Session with Sarah Johnson',
-                    'Event Certificate & Group Photo'
+                    'event1.png'
                 ]
-            },
+            }
+            /*
             {
                 title: 'Quantitative Trading Strategies - Goldman Sachs',
                 images: [
@@ -115,6 +113,7 @@
                     'Event Venue & Attendees'
                 ]
             }
+            */
         ];
 
         let currentSlide = 0;
@@ -151,15 +150,27 @@
             currentGallery.forEach((image, index) => {
                 const slide = document.createElement('div');
                 slide.className = 'slide' + (index === 0 ? ' active' : '');
-                slide.innerHTML = `
-                    <div class="slide-media">
-                        <div style="text-align: center;">
-                            <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-camera"></i></div>
-                            <div style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">${image}</div>
-                            <div style="font-size: 0.9rem; color: #888;">Photo ${index + 1} of ${currentGallery.length}</div>
+                
+                // Check if image is a file (ends with .png, .jpg, etc.)
+                const isImageFile = /\.(png|jpg|jpeg|gif|webp)$/i.test(image);
+                
+                if (isImageFile) {
+                    slide.innerHTML = `
+                        <div class="slide-media">
+                            <img src="${image}" alt="Event photo ${index + 1}" style="width: 100%; height: 100%; object-fit: contain;">
                         </div>
-                    </div>
-                `;
+                    `;
+                } else {
+                    slide.innerHTML = `
+                        <div class="slide-media">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem; margin-bottom: 1rem;"><i class="fas fa-camera"></i></div>
+                                <div style="font-size: 1.2rem; color: #fff; margin-bottom: 0.5rem;">${image}</div>
+                                <div style="font-size: 0.9rem; color: #888;">Photo ${index + 1} of ${currentGallery.length}</div>
+                            </div>
+                        </div>
+                    `;
+                }
                 container.appendChild(slide);
                 
                 const dot = document.createElement('span');
