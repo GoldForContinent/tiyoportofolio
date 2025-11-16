@@ -97,7 +97,7 @@
             {
                 title: 'Wall Street Prep Financial Modeling Seminar',
                 images: [
-                    'event2.png'
+                    'event 2.png'
                 ]
             }
             /*
