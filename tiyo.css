@@ -434,12 +434,35 @@
         }
 
         .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            display: flex;
             gap: 2.5rem;
+            overflow-x: auto;
+            scroll-behavior: smooth;
+            padding: 2rem 0;
+            scrollbar-width: thin;
+            scrollbar-color: #ff6b00 #1a1a1a;
+        }
+
+        .projects-grid::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .projects-grid::-webkit-scrollbar-track {
+            background: #1a1a1a;
+            border-radius: 10px;
+        }
+
+        .projects-grid::-webkit-scrollbar-thumb {
+            background: #ff6b00;
+            border-radius: 10px;
+        }
+
+        .projects-grid::-webkit-scrollbar-thumb:hover {
+            background: #ff8c00;
         }
 
         .project-card {
+            min-width: 350px;
             background: linear-gradient(135deg, #1a1a1a 0%, #151515 100%);
             border: 1px solid rgba(255, 107, 0, 0.2);
             border-radius: 15px;
