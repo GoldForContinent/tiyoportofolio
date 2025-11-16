@@ -416,6 +416,132 @@
                         `
                     }
                 ]
+            },
+            {
+                title: 'Career.edYOU Academy - Morgan Stanley',
+                slides: [
+                    {
+                        type: 'details',
+                        title: 'Project Overview',
+                        content: `
+                            <p><strong>Objective:</strong> Participate in a comprehensive early career exploration program designed to introduce students to Morgan Stanley's culture, business divisions, and career opportunities in financial services, with focus on building foundational knowledge and professional skills.</p>
+                            <p><strong>Duration:</strong> 3 days (September 2025)</p>
+                            <p><strong>Team Size:</strong> Individual participant in cohort-based program</p>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Methodology:</h4>
+                            <ul>
+                                <li>Attended interactive sessions exploring Morgan Stanley's various business divisions and service offerings</li>
+                                <li>Participated in skills workshops focused on professional development and industry fundamentals</li>
+                                <li>Engaged with senior leaders and employees to understand career trajectories and firm culture</li>
+                                <li>Completed case study exercises analyzing real-world financial scenarios</li>
+                                <li>Networked with fellow participants and Morgan Stanley professionals across different divisions</li>
+                            </ul>
+                        `
+                    },
+                    {
+                        type: 'details',
+                        title: 'Skills Developed',
+                        content: `
+                            <p><strong>Professional Development Areas:</strong></p>
+                            <ul>
+                                <li>Financial services industry overview and market dynamics</li>
+                                <li>Professional presentation and communication skills</li>
+                                <li>Analytical thinking and problem-solving approaches</li>
+                                <li>Corporate culture awareness and professional etiquette</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Key Features:</h4>
+                            <ul>
+                                <li>Exposure to multiple business divisions (Investment Banking, Wealth Management, Sales & Trading)</li>
+                                <li>Interactive workshops with Morgan Stanley professionals</li>
+                                <li>Networking opportunities with industry leaders</li>
+                                <li>Career pathway exploration and guidance</li>
+                                <li>Insight into day-to-day operations of a global financial institution</li>
+                            </ul>
+                        `
+                    },
+                    {
+                        type: 'details',
+                        title: 'Key Outcomes',
+                        content: `
+                            <h4 style="color: #ff6b00; margin-bottom: 1.5rem;">Professional Development:</h4>
+                            <ul>
+                                <li>Gained comprehensive understanding of Morgan Stanley's business model and operations</li>
+                                <li>Developed foundational knowledge of financial services industry structure</li>
+                                <li>Enhanced professional communication and networking abilities</li>
+                                <li>Built awareness of various career paths within financial services</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem; margin-bottom: 1.5rem;">Career Impact:</h4>
+                            <ul>
+                                <li>Established early connections with Morgan Stanley professionals and recruiting team</li>
+                                <li>Gained clarity on investment banking and wealth management career opportunities</li>
+                                <li>Developed understanding of skills and qualifications needed for competitive finance roles</li>
+                                <li>Positioned for future internship and full-time opportunities at Morgan Stanley</li>
+                            </ul>
+                        `
+                    }
+                ]
+            },
+            {
+                title: 'Career.edYOU Academy - Barclays',
+                slides: [
+                    {
+                        type: 'details',
+                        title: 'Project Overview',
+                        content: `
+                            <p><strong>Objective:</strong> Complete an immersive virtual program designed to provide insight into Barclays' operations, culture, and career opportunities while developing essential skills for success in financial services through interactive learning modules and real-world simulations.</p>
+                            <p><strong>Duration:</strong> 5 weeks (October-November 2025)</p>
+                            <p><strong>Team Size:</strong> Individual participant in virtual cohort program</p>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Methodology:</h4>
+                            <ul>
+                                <li>Completed structured online modules covering Barclays' business lines and strategic priorities</li>
+                                <li>Participated in virtual workshops on financial analysis, risk management, and client solutions</li>
+                                <li>Engaged with Barclays employees through webinars and Q&A sessions</li>
+                                <li>Analyzed case studies addressing current challenges in global banking</li>
+                                <li>Developed practical skills through simulation exercises and interactive assignments</li>
+                            </ul>
+                        `
+                    },
+                    {
+                        type: 'details',
+                        title: 'Skills Developed',
+                        content: `
+                            <p><strong>Professional Development Areas:</strong></p>
+                            <ul>
+                                <li>Global banking operations and regulatory environment</li>
+                                <li>Financial product knowledge and client service excellence</li>
+                                <li>Risk assessment and management principles</li>
+                                <li>Cross-cultural business awareness and collaboration</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem;">Key Features:</h4>
+                            <ul>
+                                <li>Comprehensive modules on Barclays' corporate and investment banking divisions</li>
+                                <li>Virtual mentorship and guidance from Barclays professionals</li>
+                                <li>Practical case study analysis on contemporary banking challenges</li>
+                                <li>Technology and innovation in modern financial services</li>
+                                <li>Professional development workshops and career planning resources</li>
+                            </ul>
+                        `
+                    },
+                    {
+                        type: 'details',
+                        title: 'Key Outcomes',
+                        content: `
+                            <h4 style="color: #ff6b00; margin-bottom: 1.5rem;">Professional Development:</h4>
+                            <ul>
+                                <li>Acquired in-depth understanding of global banking operations and services</li>
+                                <li>Developed analytical skills applicable to financial services roles</li>
+                                <li>Enhanced digital collaboration and remote professional communication abilities</li>
+                                <li>Built knowledge of risk management and regulatory compliance in banking</li>
+                            </ul>
+                            <h4 style="color: #ff6b00; margin-top: 2rem; margin-bottom: 1.5rem;">Career Impact:</h4>
+                            <ul>
+                                <li>Gained valuable exposure to Barclays' culture, values, and career opportunities</li>
+                                <li>Demonstrated commitment to career development in financial services</li>
+                                <li>Established foundation for future applications to Barclays programs</li>
+                                <li>Developed transferable skills relevant across the financial services industry</li>
+                            </ul>
+                        `
+                    }
+                ]
             }
         ];
 
