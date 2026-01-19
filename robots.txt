@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://amostiyoportfolio.vercel.app/sitemap.xml
+
+# Allow search engines to crawl all important directories
+Allow: /industry and institutes icons/
+Allow: /images/
+
+# Block unnecessary files
+Disallow: /package*.json
+Disallow: /README*
+Disallow: /*.git*
