@@ -89,15 +89,15 @@
         // Event gallery data
         const eventGalleries = [
             {
-                title: 'Tisch Scholars Program - Dana-Farber Cancer Institute',
-                images: [
-                    'event1.png'
-                ]
-            },
-            {
                 title: 'Wall Street Prep Financial Modeling Seminar',
                 images: [
                     'event 2.png'
+                ]
+            },
+            {
+                title: 'Tisch Scholars Program - Dana-Farber Cancer Institute',
+                images: [
+                    'event1.png'
                 ]
             }
             /*
